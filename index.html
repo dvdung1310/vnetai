@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>VNET AI</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="index-main">
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar Start -->
+    <div class="bg-white sticky-top">
+        <div class="container-header">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
+                <a href="index.html" class="navbar-brand d-lg-none">
+                    <img src="img/logovnet.png" alt="">
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-md-flex justify-content-between align-items-center"
+                    id="navbarCollapse">
+                    <div class="d-none d-lg-block logo-header">
+                        <a href="index.html" class="">
+                            <img src="img/logovnet.png" alt="">
+                        </a>
+                    </div>
+                    <div class="navbar-nav d-md-flex flex-column align-items-end">
+                        <div class="nav-top-bar d-none d-md-flex justify-content-evenly align-items-center text-white">
+                            <div>
+                                <img src="img/phone_in_talk.svg" alt="">
+                                Hotline: 1900 0099
+                            </div>
+                            <div>
+                                <img src="img/stacked_email.svg" alt="">
+                                Email: hello@vnetai.vn
+                            </div>
+                        </div>
+                        <div class="d-md-flex align-items-center menu-container">
+                            <a href="about.html" class="nav-item nav-link active">Về chúng tôi</a>
+                            <a href="diagnostic.html" class="nav-item nav-link">Chẩn đoán hình ảnh</a>
+                            <a href="blog.html" class="nav-item nav-link">Điểm tin</a>
+                            <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
+                            <div>
+                                <button class="btn rounded-pill btn-register"><a href="register.html">Đăng kí</a></button>
+                                <button class="btn rounded-pill btn-login"><a href="login.html">Đăng nhập</a></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0 mb-5">
+        <div id="header-carousel" class="carousel carousel-banner slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/vnet-banner.png" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container h-100 d-md-flex align-items-end mb-md-5">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7 text-start">
+                                    <h1 class=" text-white mb-4 animated slideInRight">Hệ thông tập trung
+                                        truy cập mọi lúc</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/vnet-banner.png" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container h-100 d-md-flex align-items-end mb-md-5">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7 text-start">
+                                    <h1 class=" text-white mb-4 animated slideInRight">Đảm bảo an toàn cho mọi gia đình</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Kỷ nguyên mới trong ngành -->
+
+    <div class="d-flex era-main index-about justify-content-center align-items-center flex-column">
+        <div class="w-md-50 text-center">
+            <h2 class="fw-bold">Kỷ nguyên mới trong ngành <br>
+                <span class="fw-bold color-main">chẩn đoán hình ảnh</span>
+            </h2>
+            <p class="era-p">VNet hướng tới trở thành nhà cung cấp hàng đầu về hệ <br> thống giải pháp trong lĩnh vực chẩn đoán hình
+                ảnh với <br> chất lượng cao và mức giá hợp lý cho các bệnh viện, <br> phòng khám tại Việt Nam</p>
+            <button class="btn rounded-pill btn-about"><a class="text-white" href="">Tìm hiểu thêm <img
+                        src="img/arrow_right_alt.png" alt=""></a></button>
+        </div>
+
+        <img class="era-left" src="img/Ellipse 2.png" alt="">
+        <img class="era-right" src="img/Ellipse 1 (1).png" alt="">
+        <img class="era-star-two" src="img/Group 7.png" alt="">
+        <img class="era-star-one" src="img/Vector (3).png" alt="">
+    </div>
+    <!-- Kỷ nguyên mới trong ngành end -->
+
+    <!-- dịch vụ trực tuyến -->
+    <div class="container-xxl pt-5">
+        <div class="container dich-vu">
+            <div class="text-md-start pb-4 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
+                style="max-width: 500px;">
+                <h2 class="mb-md-4 mb-1">Dịch vụ <span class="color-main">trực tuyến</span></h2>
+            </div>
+            <div id="owl-demo" class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item mb-5">
+                    <div class="testimonial-div">
+                        <img class="mb-4" src="img/doctor-from-future-concept.png" alt="">
+                        <div class="testimonial-text">
+                            <div class="p-3">
+                                <h3>Chẩn đoán hình ảnh</h3>
+                                <p style="">VNet PACS là hệ thống lưu trữ và quản lý hình ảnh y tế dành cho các bệnh
+                                    viện, phòng khám ở mọi quy mô.</p>
+                                <button><a href="">Chẩn đoán ngay <img src="img/arrow_right_alt.svg"
+                                            alt=""></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item mb-5">
+                    <div class="testimonial-div">
+                        <img class="mb-4" src="img/doctor-from-future-concept.png" alt="">
+                        <div class="testimonial-text">
+                            <div class="p-3">
+                                <h3>Chẩn đoán hình ảnh</h3>
+                                <p>VNet PACS là hệ thống lưu trữ và quản lý hình ảnh y tế dành cho các bệnh viện, phòng
+                                    khám ở mọi quy mô.</p>
+                                <button><a href="">Chẩn đoán ngay <img src="img/arrow_right_alt.svg"
+                                            alt=""></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item mb-5">
+                    <div class="testimonial-div">
+                        <img class="mb-4" src="img/doctor-from-future-concept.png" alt="">
+                        <div class="testimonial-text">
+                            <div class="p-3">
+                                <h3>Chẩn đoán hình ảnh</h3>
+                                <p>VNet PACS là hệ thống lưu trữ và quản lý hình ảnh y tế dành cho các bệnh viện, phòng
+                                    khám ở mọi quy mô.</p>
+                                <button><a href="">Chẩn đoán ngay <img src="img/arrow_right_alt.svg"
+                                            alt=""></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item mb-5">
+                    <div class="testimonial-div">
+                        <img class="mb-4" src="img/doctor-from-future-concept.png" alt="">
+                        <div class="testimonial-text">
+                            <div class="p-3">
+                                <h3>Chẩn đoán hình ảnh</h3>
+                                <p>VNet PACS là hệ thống lưu trữ và quản lý hình ảnh y tế dành cho các bệnh viện, phòng
+                                    khám ở mọi quy mô.</p>
+                                <button><a href="">Chẩn đoán ngay <img src="img/arrow_right_alt.svg"
+                                            alt=""></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end dịch vụ trực tuyến -->
+
+    <!-- Tại sao lựa chọn Start -->
+    <div class="service-container">
+        <div class="container-xxl">
+            <img class="service-img-abs" src="img/Layer_1.png" alt="">
+            <div class="container">
+                <div class="wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <h2 class="mb-5">Tại sao lựa chọn <br><span class="color-main">VnetAI</span></h2>
+                </div>
+                <div class="row g-4">
+                    <div style="z-index: 3;" class="col-lg-4 col-md-6 wow fadeInUp position-relative "
+                        data-wow-delay="0.3s">
+                        <div class="service-item h-100">
+                            <div class="service-text rounded px-3 py-3">
+                                <p class="mb-3 number">01.</p>
+                                <div class="d-flex align-items-center mb-3">
+                                    <img class="me-2" src="img/award_star.svg" alt="">
+                                    <span class="color-main">Công nghệ cao</span>
+                                </div>
+
+                                <p class="mb-0 content">Là kết quả nghiên cứu và phát triển của đội ngũ lập trình viên
+                                    giàu kinh nghiệm,
+                                    kết hợp cùng sự hướng dẫn, hỗ trợ nhiệt tình của các giáo sư, chuyên gia đầu ngành,
+                                    xây dựng hệ thống hỗ trợ đạt tiêu chuẩn quốc tế và phù hợp với nhu cầu trong nước.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp tinh-linh-hoat" data-wow-delay="0.3s">
+                        <div class="service-item service-center position-relative h-100">
+                            <div class="service-text rounded px-3 py-3">
+                                <p class="mb-3 number">02.</p>
+                                <div class="d-flex align-items-center mb-3">
+                                    <img class="me-2" src="img/convert_to_text.png" alt="">
+                                    <span class="color-main">Tính linh hoạt</span>
+                                </div>
+
+                                <p class="mb-0 content">Là kết quả nghiên cứu và phát triển của đội ngũ lập trình viên
+                                    giàu kinh nghiệm,
+                                    kết hợp cùng sự hướng dẫn, hỗ trợ nhiệt tình của các giáo sư, chuyên gia đầu ngành,
+                                    xây dựng hệ thống hỗ trợ đạt tiêu chuẩn quốc tế và phù hợp với nhu cầu trong nước.
+                                </p>
+                            </div>
+                        </div>
+
+                        <img class="tinh-linh-hoat-one" src="img/Vector (3).png" alt="">
+                        <img class="tinh-linh-hoat-two" src="img/Vector (3).png" alt="">
+                        <img class="tinh-linh-hoat-three" src="img/Vector (3).png" alt="">
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item position-relative h-100">
+                            <div class="service-text rounded px-3 py-3">
+                                <p class="mb-3 number">03.</p>
+                                <div class="d-flex align-items-center mb-3">
+                                    <img class="me-2" src="img/approval_delegation.svg" alt="">
+                                    <span class="color-main">Hiệu quả đầu tư</span>
+                                </div>
+
+                                <p class="mb-0 content">Là kết quả nghiên cứu và phát triển của đội ngũ lập trình viên
+                                    giàu kinh nghiệm,
+                                    kết hợp cùng sự hướng dẫn, hỗ trợ nhiệt tình của các giáo sư, chuyên gia đầu ngành,
+                                    xây dựng hệ thống hỗ trợ đạt tiêu chuẩn quốc tế và phù hợp với nhu cầu trong nước.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tại sao lựa chọn End -->
+
+    <!-- Gía trị cốt lõi Start -->
+    <div class="value-core-container">
+        <img class="value-core-img-abs d-none d-md-block" src="img/core-img-blue.png" alt="">
+        <img class="value-core-img-abs2 d-none d-md-block" src="img/Layer_1.png" alt="">
+        <div class="container-xxl">
+            <div class="container">
+                <div class="wow fadeInUp text-center mx-auto" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <h2 class="mb-md-5 mb-3">Giá trị <span class="color-main">cốt lõi</span></h2>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="wow fadeInUp tien-phong" data-wow-delay="0.3s">
+                        <div class="value-core-item position-relative h-100">
+                            <div class="value-core-text text-center rounded px-3 py-3 flex-column d-flex justify-content-center align-items-center">
+                                <div class="value-core-img mb-md-5 mb-3">
+                                    <img class="value-core-item-common" src="img/rocket_launch.png" alt="">
+                                </div>
+                                <h3 class="color-main mb-3 font-weight-bold">Tiên phong đổi mới,<br> kiến tạo tương lai</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
+                        <img class="tien-phong-img" src="img/Vector (3).png" alt="">
+                    </div>
+                
+                    <div class="wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="value-core-item position-relative h-100">
+                            <div class="value-core-text text-center rounded px-3 py-3 flex-column d-flex justify-content-center align-items-center">
+                                <div class="value-core-img mb-md-5 mb-3">
+                                    <img class="value-core-item-common" src="img/database_upload.png" alt="">
+                                </div>
+                                <h3 class="color-main mb-3 font-weight-bold">Tối ưu hiệu quả,<br> nâng cao giá trị</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="wow fadeInUp tien-phong" data-wow-delay="0.3s">
+                        <div class="value-core-item position-relative h-100">
+                            <div class="value-core-text text-center rounded px-3 py-3 flex-column d-flex justify-content-center align-items-center">
+                                <div class="value-core-img mb-md-5 mb-3">
+                                    <img class="value-core-item-common" src="img/diversity_1.png" alt="">
+                                </div>
+                                <h3 class="color-main mb-3 font-weight-bold">Con người là trọng tâm,<br> AI là công cụ</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
+                        <img class="con-nguoi-img" src="img/Vector (3).png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Gía trị cốt lõi End -->
+
+
+    <!-- Project Start -->
+    <div class="container-xxl project-container pt-5">
+        <div class="container project-bg">
+            <div class="p-md-5 px-1">
+                <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
+                    style="max-width: 500px;">
+                    <h2 class="mb-5 pt-5">Đội ngũ
+                        <span class="color-main">chuyên gia</span> <br>của chúng tôi
+                    </h2>
+                </div>
+                <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="project-item mb-5">
+                        <div class="project-item-img">
+                            <img src="img/project1.png" alt="">
+                        </div>
+
+                        <div class="project-item-text">
+                            <p class="title-chuyengia">Chuyên gia</p>
+                            <h2 class="text-white name-tiensi">Nguyễn Văn Duy</h2>
+                            <p class="duty-text">Thạc sĩ nghiên cứu </p>
+                            <p class="project-item-p-end text-white">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        </div>
+                    </div>
+                    <div class="project-item mb-5">
+                        <div class="project-item-img">
+                            <img src="img/doi-ngu2.png" alt="">
+                        </div>
+
+                        <div class="project-item-text">
+                            <p class="title-chuyengia">Chuyên gia</p>
+                            <h2 class="text-white name-tiensi">Nguyễn Văn A</h2>
+                            <p class="duty-text">Thạc sĩ nghiên cứu </p>
+                            <p class="project-item-p-end text-white">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-item mb-5">
+                        <div class="project-item-img">
+                            <img src="img/project1.png" alt="">
+                        </div>
+
+                        <div class="project-item-text">
+                            <p class="title-chuyengia">Chuyên gia</p>
+                            <h2 class="text-white name-tiensi">Nguyễn Văn Cừ</h2>
+                            <p class="duty-text">Thạc sĩ nghiên cứu </p>
+                            <p class="project-item-p-end text-white">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-item mb-5">
+                        <div class="project-item-img">
+                            <img src="img/doi-ngu2.png" alt="">
+                        </div>
+
+                        <div class="project-item-text">
+                            <p class="title-chuyengia">Chuyên gia</p>
+                            <h2 class="text-white name-tiensi">Nguyễn Văn Huy</h2>
+                            <p class="duty-text">Thạc sĩ nghiên cứu </p>
+                            <p class="project-item-p-end text-white">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-item mb-5">
+                        <div class="project-item-img">
+                            <img src="img/doi-ngu2.png" alt="">
+                        </div>
+
+                        <div class="project-item-text">
+                            <p class="title-chuyengia">Chuyên gia</p>
+                            <h2 class="text-white name-tiensi">Nguyễn Văn A</h2>
+                            <p class="duty-text">Thạc sĩ nghiên cứu </p>
+                            <p class="project-item-p-end text-white">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        </div>
+                    </div>
+
+                   
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+
+
+    <div class="container-xxl ecosystem-container pt-5">
+        <div class="container logo-some">
+            <div class="text-center mx-auto text-md-start pb-3 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
+                style="max-width: 500px;">
+                <h2 class="mb-md-5 text-center">
+                    <span class="color-main">Hệ sinh thái </span>của chúng tôi
+                </h2>
+            </div>
+
+            <div class="ecosystem-logo mb-md-5 mb-3">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <img class="mb-3" src="img/logomain.png" alt="">
+                        <p class="text-black text-center ms-3">Đơn vị chủ quản</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="row logo-four">
+                    <div class="col-lg-3 col-md-6 col-4">
+                        <div class="d-flex justify-content-center">
+                            <div class="text-center">
+                                <div class="logo-img-height">
+                                    <img class="mb-2" src="img/logo2.png" alt="">
+                                </div>
+                                <p class="text-black text-center">Giải pháp <br>
+                                    bảo hành điện tử</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-4">
+                        <div class="d-flex justify-content-center">
+                            <div class="text-center">
+                                <div class="logo-img-height">
+                                    <img class="mb-2" src="img/logo3.png" alt="">
+                                </div>
+                                <p class="text-black text-center">Tin nhắn chăm sóc <br>
+                                    khách hàng & quảng cáo</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 col-4">
+                        <div class="d-flex justify-content-center">
+                            <div class="text-center">
+                                <div class="logo-img-height">
+                                    <img class="mb-2" src="img/logo4.png" alt="">
+                                </div>
+                                <p class="text-black text-center">Khỷ nghiên mới <br>
+                                    trong ngành chẩn đoán <br>
+                                    hình ảnh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-4">
+                        <div class="d-flex justify-content-center">
+                            <div class="text-center">
+                                <div class="logo-img-height">
+                                    <img class="mb-2" src="img/logo5.png" alt="">
+                                </div>
+                                <p class="text-black text-center">Dịch vụ hóa đơn <br>
+                                    điện tử</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-4 d-block d-md-none">
+                        <div class="d-flex justify-content-center">
+                            <div class="text-center">
+                                <div class="logo-img-height mb-md-5">
+                                    <img class="" src="img/logo8.png" alt="">
+                                </div>
+                                <p class="text-black text-center">Chủ động thông tin <br>
+                                    chăm sóc sức khỏe <br>
+                                    bà bầu và trẻ em</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-4 d-block d-md-none">
+                        <div class="d-flex justify-content-center">
+                            <div class="text-center">
+                                <div class="logo-img-height">
+                                    <img class="mb-2" src="img/logo6.png" alt="">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="row logo-three d-flex justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-4 d-md-block d-none">
+                        <div class="d-flex justify-content-center">
+                            <div class="text-center">
+                                <div class="logo-img-height">
+                                    <img class="mb-2" src="img/logo6.png" alt="">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-4 d-md-block d-none">
+                        <div class="d-flex justify-content-center">
+                            <div class="text-center">
+                                <div class="logo-img-height">
+                                    <img class="mb-2" src="img/logo7.png" alt="">
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 col-4 d-md-block d-none">
+                        <div class="d-flex justify-content-center">
+                            <div class="text-center">
+                                <div class="logo-img-height mb-5">
+                                    <img class="" src="img/logo8.png" alt="">
+                                </div>
+                                <p class="text-black text-center">Chủ động thông tin <br>
+                                    chăm sóc sức khỏe <br>
+                                    bà bầu và trẻ em</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-4 d-block d-md-none">
+                        <div class="d-flex justify-content-center">
+                            <div class="text-center">
+                                <div class="logo-img-height">
+                                    <img class="mb-2" src="img/logo7.png" alt="">
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3 class="mb-3">Điểm tin</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="blog-item">
+                    <div class="blog-item-img">
+                        <a href="">
+                            <img src="img/64713875d4993be25bf055dcdb43a6e7.jfif" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-item-content">
+                        <p class="blog-item-date">10, tháng 10, 2024 <span>By Admin</span></p>
+                        <a class="blog-item-title">Chẩn đoán hình ảnh – nghề đoán bệnh qua… ảnh!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="blog-item">
+                    <div class="blog-item-img">
+                        <a href="">
+                            <img src="img/e92a5d4a1cb850b421f86312747501ed.jfif" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-item-content">
+                        <p class="blog-item-date">10, tháng 10, 2024 <span>By Admin</span></p>
+                        <a href="" class="blog-item-title">Chẩn đoán hình ảnh – nghề đoán bệnh qua… ảnh!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="blog-item">
+                    <div class="blog-item-img">
+                        <a href="">
+                            <img src="img/b599b39188747bfb20db44c576cec97f.jfif" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-item-content">
+                        <p class="blog-item-date">10, tháng 10, 2024 <span>By Admin</span></p>
+                        <a class="blog-item-title">Chẩn đoán hình ảnh – nghề đoán bệnh qua… ảnh!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer mt-5 py-md-5 py-3 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <img class="mb-md-5 mb-3" src="img/logo-footer.png" alt="">
+                    <p class="ms-3 mb-0 d-md-block d-none">Copyright © 2024 VNet</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <p class="text-white mb-4 text-f fw-bold">Liên hệ</p>
+                    <h5 class="text-white">Địa chỉ</h5>
+                    <p>6BT1Số 26BT1 Bắc Linh Đàm, Quận Hoàng Mai,
+                        Thành phố Hà Nội.</p>
+                    <div class="d-md-flex align-items-center">
+                        <p class="me-5"><span class="fw-bold">Hotline:</span> 1900 6609</p>
+                        <p><span class="fw-bold">Email:</span> <a class="text-white text-decoration-underline" href="">info@vtrue.vn</a></p>
+                    </div>
+
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <ul class="footer-ul">
+                        <li> <a class="btn btn-link" href="">Về chúng tôi</a></li>
+                        <li><a class="btn btn-link" href="">Chẩn đoán hình ảnh</a></li>
+                        <li><a class="btn btn-link" href="">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <p class="text-white mb-2 text-f">Theo dõi chúng tôi</p>
+                    <div>
+                        <img src="img/facebook2.svg" alt="">
+                        <img src="img/in.svg" alt="">
+                        <img src="img/youtube.svg" alt="">
+                    </div>
+                </div>
+
+                <p class="mt-5 mb-0 d-md-block d-md-none d-block">Copyright © 2024 VNet</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
